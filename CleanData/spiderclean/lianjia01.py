@@ -82,7 +82,7 @@ class LianjiaData():
         ax1.set_xlabel('数量')
         ax1.set_ylabel('户型')
         plt.show()
-
+    
 
 
 if __name__ =="__main__":
