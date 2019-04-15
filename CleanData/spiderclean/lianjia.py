@@ -85,7 +85,7 @@ class LianjiaData():
         #建房时间的分布情况
         sns.distplot(df['Size'],bins=20,ax=ax1,color='r')
         sns.kdeplot(df['Size'],shade=True,ax=ax1)
-        #建房时间和出售价格的关系
+        #建房大小和出售价格的关系
         sns.regplot(x='Size',y='Price',data=df,ax=ax2)
         plt.show()
 
@@ -117,5 +117,5 @@ if __name__ =="__main__":
     lianjia = LianjiaData("lianjia.csv")
     print("开始进行数据可视化")
     #
-    lianjia.datavisual03()
+    lianjia.datavisual01()
     print("数据可视化结束")
